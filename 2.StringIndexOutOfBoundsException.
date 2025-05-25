@@ -1,0 +1,13 @@
+public class StringIndexExample {
+    public static void main(String[] args) {
+        String message = "Hello";
+
+        try {
+            // Trying to access character at index 10 which doesn't exist
+            char ch = message.charAt(10);
+            System.out.println("Character at index 10: " + ch);
+        } catch (StringIndexOutOfBoundsException e) {
+            System.out.println("Error: String index is out of bounds!");
+        }
+    }
+}
