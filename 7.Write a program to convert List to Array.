@@ -1,0 +1,21 @@
+import java.util.List;
+import java.util.ArrayList;
+
+public class ListToArrayExample {
+    public static void main(String[] args) {
+        // Create a List of strings
+        List<String> fruits = new ArrayList<>();
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Orange");
+
+        // Convert List to Array
+        String[] fruitArray = fruits.toArray(new String[0]);
+
+        // Print the array elements
+        System.out.println("Array elements:");
+        for (String fruit : fruitArray) {
+            System.out.println(fruit);
+        }
+    }
+}
