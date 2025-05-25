@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+public class ArrayListClearExample {
+    public static void main(String[] args) {
+        // Create an ArrayList of strings
+        ArrayList<String> names = new ArrayList<>();
+
+        // Add elements to the ArrayList
+        names.add("Alice");
+        names.add("Bob");
+        names.add("Charlie");
+        names.add("Diana");
+
+        // Display the list before clearing
+        System.out.println("Original ArrayList: " + names);
+
+        // Remove all elements
+        names.clear();
+
+        // Display the list after clearing
+        System.out.println("ArrayList after removing all elements: " + names);
+    }
+}
